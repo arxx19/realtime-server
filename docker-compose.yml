@@ -1,0 +1,7 @@
+services:
+  realtime:
+    build: .
+    container_name: realtime-server
+    restart: unless-stopped
+    ports:
+      - "1234:1234"
